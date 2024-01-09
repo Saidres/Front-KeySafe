@@ -1,0 +1,135 @@
+.with-background {
+    background-image: url('src\assets\izq.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh; 
+  }
+  .der-background {
+    background-image: url('src/assets/der.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh; 
+  }
+  
+  .titulo-azul {
+    position: absolute;
+    top: 15%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to right, #494A8B, transparent); /* Degradado de azul a transparente en la parte derecha */
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  .icono-imagen-primero img {
+    width: 80px; 
+    margin-right: 10px;
+    position: absolute;
+    top: -3px; 
+    left: -30px; 
+}
+  
+  .cuadrado-azul {
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: normal;
+    background: linear-gradient(to right, #0CB7BD, transparent);
+    width: 50%;
+}
+
+
+.icono-imagen img {
+    width: 30px; 
+    margin-right: 10px;
+}
+
+.imagen-boton {
+    cursor: pointer; 
+    width: 30px; 
+    margin-right: 10px;
+    margin-left: 40px
+}
+
+.cuadrado-azul-1 {
+    position: absolute;
+    top: 48%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: normal;
+    background: linear-gradient(to right, #0CB7BD, transparent);
+    width: 50%;
+}
+
+.cuadrado-azul-2 {
+    position: absolute;
+    top: 61%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: normal;
+    background: linear-gradient(to right, #0CB7BD, transparent);
+    width: 50%;
+}
+
+.cuadrado-azul-3 {
+    position: absolute;
+    top: 74%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: normal;
+    background: linear-gradient(to right, #0CB7BD, transparent);
+    width: 50%;
+}
+
+.favoritas {
+  position: absolute;
+  top: 92%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  padding: 2px 1%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: normal;
+  background: linear-gradient(to right, #0cbd41, transparent);
+  width: 40%;
+  border: none;
+  outline: none;
+}
+
+.reporteSeguridad {
+  position: absolute;
+  top: 92%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  padding: 2px 1%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: normal;
+  background: linear-gradient(to right, #c44343, transparent);
+  width: 40%;
+  border: none;
+  outline: none;
+}
+  

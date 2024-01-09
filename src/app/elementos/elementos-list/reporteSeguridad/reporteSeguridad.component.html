@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 with-background">
+      <!-- Contenido para el 1/4 -->
+    </div>
+    <div class="col-md-9 der-background">
+      <!-- Contenido para el 3/4 restante -->
+      <div class="titulo-azul">
+        <div class="icono-imagen-primero">
+          <img src="assets/logomini.png" alt="Icono">
+        </div>
+            <h1 style="padding-left: 5%">REPORTE DE SEGURIDAD   100% {{ nivelSeguridad }}</h1>
+      </div>
+
+      <div class="fondo-cuadrado-verde" id="contenidoDinamico">
+
+        <div class="componente-1">
+          <div class="icono-imagen">
+              <img src="assets/seguridad.png" alt="Icono">
+          </div>
+          <h1>ELEMENTOS A CADUCIR</h1>
+        </div>
+
+        <div class="componente-2">
+          <div class="icono-imagen">
+              <img src="assets/seguridad.png" alt="Icono">
+          </div>
+          <h1>Cantidad Tarjeta: 0{{ resultados.cantidad_tarjeta }}</h1>
+        </div>
+        
+        <div class="componente-3">
+          <div class="icono-imagen">
+              <img src="assets/seguridad.png" alt="Icono">
+          </div>
+          <h1>Cantidad Secreto: 0{{ resultados.cantidad_secreto }}</h1>
+        </div>
+        
+        <div class="componente-4">
+          <div class="icono-imagen">
+              <img src="assets/seguridad.png" alt="Icono">
+          </div>
+          <h1>Cantidad Login: 0{{ resultados.cantidad_login }}</h1>
+        </div>
+        
+
+        <div class="componente-5">
+          <div class="icono-imagen">
+            <img src="assets/seguridad.png" alt="Icono">
+          </div>
+          <h1>Claves duplicadas: 0{{ clavesDuplicadas }}</h1>
+        </div>
+        
+        
+      </div>
+      
+      
+      <button class="cuadrado-verde-guardar" (click)="salir();">
+        <div class="icono-imagen">
+          <img src="assets/seguridad.png" alt="Icono">
+        </div>
+        <h2>VOLVER</h2>
+      </button>
+      
+
+    </div>
+  </div>
+</div>

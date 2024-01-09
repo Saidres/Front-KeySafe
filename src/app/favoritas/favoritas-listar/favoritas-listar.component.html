@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 with-background">
+      <!-- Contenido para el 1/4 -->
+    </div>
+    <div class="col-md-9 der-background">
+      <!-- Contenido para el 3/4 restante -->
+      <div class="titulo-azul">
+        <div class="icono-imagen-primero">
+          <img src="assets/logomini.png" alt="Icono">
+        </div>
+            <h1 style="padding-left: 5%">ELEMENTOS GUARDADOS</h1>
+      </div>
+      <div class="cuadrado-azul-header">
+        <div class="icono-imagen">
+          <img src="assets/seguridad.png" alt="Icono">
+        </div>
+        <h1>CLAVES FAVORITAS</h1>
+        <a (click)="crearClaveFavorita();">
+          <img class="imagen-boton-add" src="assets/mas.png" alt="Botón">
+        </a>
+      </div>
+
+      <div class="fondo-cuadrado-verde" id="contenidoDinamico">
+        <div class="cuadrado-azul" *ngFor="let claveFavoritas of claveFavorita">
+          <div class="icono-imagen">
+            <img src="assets/icont.png" alt="Icono">
+          </div>
+          <h3 class="titulo-cuadrado">{{ claveFavoritas.nombre }}</h3>
+          <img class="imagen-boton" src="assets/editar.png" alt="Botón">
+          <img class="imagen-boton" src="assets/eliminar.png" alt="Botón">
+          <img class="imagen-boton" src="assets/verclave.png" alt="Botón">
+          <div class="texto-cuadro-blanco">{{ claveFavoritas.clave }}</div>
+        </div>
+      </div>
+      
+      
+      <button class="cuadrado-verde-guardar" (click)="salir();">
+        <div class="icono-imagen">
+          <img src="assets/seguridad.png" alt="Icono">
+        </div>
+        <h2>VOLVER</h2>
+      </button>
+      
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,105 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 with-background">
+        <!-- Contenido para el 1/4 -->
+      </div>
+      <div class="col-md-9 der-background">
+        <!-- Contenido para el 3/4 restante -->
+        <form [formGroup]="tarjetaForm" (ngSubmit)="crearTarjeta()">
+          <div class="titulo-azul">
+            <div class="icono-imagen-primero">
+              <img src="assets/logomini.png" alt="Icono">
+            </div>
+                <h1 style="padding-left: 5%">AGREGAR TARJETAS</h1>
+          </div>
+          
+          <div class="fondo-cuadrado-verde" id="contenidoDinamico">
+  
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="nombre" placeholder="Nombre de tarjeta" class="single-line-input" id="nombre">
+            </div>
+              
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="numero" placeholder="Numero de tarjeta" class="single-line-input" id="numero">
+            </div>
+          
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="titular" placeholder="Titular" class="single-line-input" id="titular">
+            </div>
+  
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="fechaVencimiento" placeholder="Fecha de vencimiento" class="single-line-input" id="fechaVencimiento">
+            </div>
+  
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="cvc" placeholder="CVC" class="single-line-input" id="cvc">
+            </div>
+  
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="clave" id="claveInput" placeholder="Clave" class="single-line-input" style="width: 55%;">
+              <button class="titulo-clave-aleatoria" (click)="generarClaveAleatoria()">
+                <div class="icono-imagen">
+                  <img src="assets/logomini.png" alt="Icono">
+                </div>
+                <h4>Generar clave aleatoria</h4>
+              </button>
+            </div>
+  
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="telefono" placeholder="telefono" class="single-line-input" id="telefono">
+            </div>
+  
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="direccion" placeholder="Dirección" class="single-line-input" id="direccion">
+            </div>
+  
+            <div class="cuadrado-azul">
+              <div class="icono-imagen">
+                <img src="assets/icont.png" alt="Icono">
+              </div>
+              <input type="text" formControlName="nota" placeholder="Nota" class="single-line-input" id="nota">
+            </div>
+          </div>
+          
+          <button type="submit" class="cuadrado-verde-guardar" [disabled]="creandoTarjeta">
+            <div class="icono-imagen">
+              <img src="assets/seguridad.png" alt="Icono">
+            </div>
+            <h2>GUARDAR</h2>
+          </button>&nbsp;
+  
+          <button type="button" class="cuadrado-rojo-cerrar" (click)="cancelar()">
+            <div class="icono-imagen">
+              <img src="assets/seguridad.png" alt="Icono">
+            </div>
+            <h2>CANCELAR</h2>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,201 @@
+.with-background {
+    background-image: url('src\assets\izq.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh; 
+  }
+  
+  .der-background {
+    background-image: url('src/assets/der.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh; 
+  }
+  
+  .titulo-azul {
+    position: absolute;
+    top: 15%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to right, #494A8B, transparent);
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icono-imagen-primero img {
+    width: 80px;
+    margin-right: 10px;
+    position: absolute;
+    top: -3px;
+    left: -30px;
+  }
+  
+  .cuadrado-azul-header {
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: normal;
+    background: linear-gradient(to right, #0CB7BD, transparent);
+    width: 50%;
+  }
+  
+  .icono-imagen img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .imagen-boton {
+    cursor: pointer;
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  
+  .imagen-boton-add {
+    cursor: pointer;
+    width: 38px;
+    margin-right: 10px;
+    margin-left: 30px;
+  }
+  
+  .fondo-cuadrado-verde {
+    position: absolute;
+    top: 54%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 63%;
+    background: linear-gradient(to left, #0CB7BD, transparent);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cuadrado-azul {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: normal;
+    background: #0CB7BD;
+    width: 90%;
+  }
+  
+  .titulo-cuadrado {
+    margin-bottom: 10px; /* Espacio predeterminado para el título, ajusta según sea necesario */
+    white-space: nowrap; /* Evitará que el texto se divida en múltiples líneas */
+    overflow: hidden; /* Oculta el contenido que desborda el contenedor */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) cuando el texto se corta */
+  }
+  
+  .texto-cuadro-blanco {
+    background-color: white;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #ccc; /* Añade un borde delgado para separar visualmente el cuadro blanco */
+    border-radius: 8px; /* Establece el radio de los bordes a 8px, ajusta según sea necesario */
+    color:black;
+    font-size: 25px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  
+  
+  .cuadrado-verde-guardar {
+    position: absolute;
+    top: 92%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 2px 1%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: normal;
+    background: linear-gradient(to right, #0cbd41, transparent);
+    width: 20%;
+    border: none;
+    outline: none;
+  
+  }
+  
+  .componente-1 {
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: normal;
+    background: linear-gradient(to right, #0CB7BD, transparent);
+    width: 70%;
+}
+
+.componente-2 {
+  position: absolute;
+  top: 32%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: normal;
+  background: linear-gradient(to right, #0CB7BD, transparent);
+  width: 50%;
+}
+
+.componente-3 {
+  position: absolute;
+  top: 50%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: normal;
+  background: linear-gradient(to right, #0CB7BD, transparent);
+  width: 50%;
+}
+
+.componente-4 {
+  position: absolute;
+  top: 69%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: normal;
+  background: linear-gradient(to right, #0CB7BD, transparent);
+  width: 50%;
+}
+
+.componente-5 {
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: normal;
+  background: linear-gradient(to right, #0CB7BD, transparent);
+  width: 50%;
+}

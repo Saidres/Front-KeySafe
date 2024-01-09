@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 with-background">
+      <!-- Contenido para el 1/4 -->
+    </div>
+    <div class="col-md-9 der-background">
+      <!-- Contenido para el 3/4 restante -->
+      
+      <form [formGroup]="favoritasForm" (ngSubmit)="crearFavorita()">
+        <div class="titulo-azul">
+          <div class="icono-imagen-primero">
+            <img src="assets/logomini.png" alt="Icono">
+          </div>
+              <h1 style="padding-left: 5%">AGREGAR CLAVES FAVORITAS</h1>
+        </div>
+        
+        <div class="fondo-cuadrado-verde" id="contenidoDinamico">
+
+          <div class="cuadrado-azul">
+            <div class="icono-imagen">
+              <img src="assets/icont.png" alt="Icono">
+            </div>
+            <input type="text" formControlName="nombre" placeholder="Nombre de login favorito" class="single-line-input" id="nombre">
+          </div>
+            
+    
+
+          <div class="cuadrado-azul">
+            <div class="icono-imagen">
+              <img src="assets/icont.png" alt="Icono">
+            </div>
+            <input type="text" formControlName="clave" id="claveInput" placeholder="Clave" class="single-line-input" style="width: 55%;">
+            <button class="titulo-clave-aleatoria" (click)="generarClaveAleatoria()">
+              <div class="icono-imagen">
+                <img src="assets/logomini.png" alt="Icono">
+              </div>
+              <h4>Generar clave aleatoria</h4>
+            </button>
+          </div>
+
+
+          <div class="cuadrado-azul">
+            <div class="icono-imagen">
+              <img src="assets/icont.png" alt="Icono">
+            </div>
+            <input type="text" formControlName="pista" placeholder="Pista" class="single-line-input" id="pista">
+          </div>
+        </div>
+        
+        <button type="submit" class="cuadrado-verde-guardar" [disabled]="creandoFavoritas">
+          <div class="icono-imagen">
+            <img src="assets/seguridad.png" alt="Icono">
+          </div>
+          <h2>GUARDAR</h2>
+        </button>&nbsp;
+
+        <button type="button" class="cuadrado-rojo-cerrar" (click)="cancelar()">
+          <div class="icono-imagen">
+            <img src="assets/seguridad.png" alt="Icono">
+          </div>
+          <h2>CANCELAR</h2>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+

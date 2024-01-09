@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 with-background">
+        <!-- Contenido para el 1/4 -->
+      </div>
+      <div class="col-md-9 der-background">
+        <!-- Contenido para el 3/4 restante -->
+        <div class="titulo-azul">
+          <div class="icono-imagen-primero">
+            <img src="assets/logomini.png" alt="Icono">
+          </div>
+          <h1 style="padding-left: 5%">EDITAR TARJETA</h1>
+        </div>
+  
+        <div *ngFor="let tarjetaItem of tarjeta">
+            <div *ngIf="tarjetaItem.id === tarjetaId">
+              <div class="cuadrado-azul">
+                <div class="icono-imagen">
+                  <img src="assets/icont.png" alt="Icono">
+                </div>
+                <h3 class="titulo-cuadrado">{{ tarjetaItem.nombre }}</h3>
+
+                <button type="button" class="cuadrado-verde-guardar" (click)="actualizarTarjeta(tarjetaId, tarjetaItem)">
+                  <div class="icono-imagen">
+                    <img src="assets/seguridad.png" alt="Icono">
+                  </div>
+                  <h2>ACTUALIZAR TARJETA</h2>
+                </button>
+              </div>
+            </div>
+          </div>
+  
